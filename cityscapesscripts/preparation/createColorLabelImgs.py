@@ -24,6 +24,7 @@ from __future__ import print_function, absolute_import, division
 import os, glob, sys
 
 # cityscapes imports
+
 from cityscapesscripts.helpers.csHelpers import printError
 from cityscapesscripts.preparation.json2labelImg import json2labelImg
 
@@ -60,11 +61,11 @@ def main():
     print("Progress: {:>3} %".format( progress * 100 / len(files) ), end=' ')
     for f in files:
         # create the output filename
-        dst = f.replace( "_polygons.json" , "_labelTrainIds.png" )
+        dst = f.replace( "_polygons.json" , "_colors.png" )
 
         # do the conversion
         try:
-            json2labelImg( f , dst , "trainIds" )
+            json2labelImg( f , dst , "color" )
         except:
             print("Failed to convert: {}".format(f))
             raise
