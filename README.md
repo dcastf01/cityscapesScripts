@@ -1,6 +1,6 @@
 # WARNING
 
-This repository is a copy from https://github.com/dcastf01/cityscapesScripts
+This repository is a copy from https://github.com/mcordts/cityscapesScripts
 I did a fork, and i modify the label from license plate to use in my thesis
 
 
