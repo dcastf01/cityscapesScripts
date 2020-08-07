@@ -61,7 +61,7 @@ def main():
     print("Progress: {:>3} %".format( progress * 100 / len(files) ), end=' ')
     for f in files:
         # create the output filename
-        dst = f.replace( "_polygons.json" , "_colors.png" )
+        dst = f.replace( "_polygons.json" , "_color.png" )
 
         # do the conversion
         try:
