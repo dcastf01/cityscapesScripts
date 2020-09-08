@@ -61,7 +61,7 @@ Label = namedtuple( 'Label' , [
 
 labels = [
     #       name                     id    trainId   category            catId     hasInstances   ignoreInEval   color
-    Label(  'unlabeled'            ,  1 ,      0 , 'void'            , 0       , False        , True         , (  0,  0,  0) ),
+    Label(  'unlabeled'            ,  0 ,      0 , 'void'            , 0       , False        , True         , (  0,  0,  0) ),
     Label(  'ego vehicle'          ,  1 ,      0 , 'void'            , 0       , False        , True         , (  0,  0,  0) ),
     Label(  'rectification border' ,  2 ,      0 , 'void'            , 0       , False        , True         , (  0,  0,  0) ),
     Label(  'out of roi'           ,  3 ,      0 , 'void'            , 0       , False        , True         , (  0,  0,  0) ),
